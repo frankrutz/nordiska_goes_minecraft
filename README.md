@@ -20,7 +20,7 @@ Recommended hardware:
 Any Raspberry Pi 3, Kano is the coolest package for kids:
 https://kano.me/store/row/products/computer-kit-2016
 
-Definition of coordinate System:
+Definition of coordinate system:
 See image nordiska_minecraft_coordinate_system2.png :
 
 ![Bilby Stampede](https://github.com/potf0815/nordiska_goes_minecraft/blob/master/nordiska_minecraft_coordinate_system2.png)
