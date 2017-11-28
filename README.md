@@ -1,5 +1,7 @@
 # nordiska_goes_minecraft
 
+Status: design
+
 Python programming for NORDISKA kids
 
 Official Minecraft Version of Nordiska Roddföreningen
