@@ -22,6 +22,7 @@ https://kano.me/store/row/products/computer-kit-2016
 
 Definition of coordinate System:
 See image nordiska_minecraft_coordinate_system.png :
+Remark from Frank: There is an error in the pic:: coordinate y must read z ....
 ![Bilby Stampede](https://github.com/potf0815/nordiska_goes_minecraft/blob/master/nordiska_minecraft_coordinate_system.png)
 
 
