@@ -2,6 +2,9 @@
 
 Status: design
 
+To go live on evening saturday 2nd December 2017
+for Dansk Julefrukost
+
 Python programming for NORDISKA kids
 
 Official Minecraft Version of Nordiska Roddföreningen
