@@ -3,7 +3,7 @@
 Status: design
 
 To go live on evening saturday 2nd December 2017
-for Dansk Julefrukost
+for Dansk Julefrokost
 
 Python programming for NORDISKA kids
 
