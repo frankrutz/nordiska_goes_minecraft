@@ -11,20 +11,32 @@ def makeStairs(x,z,y,numstairs,width):
     for s in range(0, numstairs):
         for w in range(0,width):
              mc.setBlock(x+w,z+s,y+s,1)#stone y-koordinate
+
+def makeTree(x,z,y):
+        mc.setBlocks(x,z,y       ,x+1,z+6,y+1,  17)
+        mc.setBlocks(x-5,z+6,y-5 ,x+4,z+26,y+5, 18)
+
+def printCoordinateSystem():
+    for x in range(0, 10):
+         mc.setBlock(x,1,0,2)#gras x-coordinate
+    for z in range(0, 10):
+        mc.setBlock(0,z,0,24)#sandstone z-coordinate
+    for y in range(0, 10):
+         mc.setBlock(0,1,y,1)#stone y-koordinate
     
 position = mc.player.getTilePos()
 
 
-mc.setBlocks(-150,0,-150,150,150,150,0)  #air
-mc.setBlocks(-150,-1,-150, 150,0,150,2)  #gras - all.
+mc.setBlocks(-150,0,-150   ,150,150,150 ,0)  #air
+mc.setBlocks(-150,-1,-150  ,150,0,150   ,2)  #gras - all.
 
 mc.setBlocks(-150,-1,80,150,0,150,8)     #water
 mc.setBlocks(0,-1,0,100,0,80,2)          #gras
 mc.setBlocks(-150,-1,0,150,0,-20,1)      #stone=street
 
 mc.setBlocks(80,0,20,100,12,60  ,24)     #NORDISKA first and second floor
-mc.setBlocks(81,1,21,  99,11,59  , 0)     #air in NORDISKA
-mc.setBlocks(84,1,20,   87,4,21 , 0)     #front door opening
+mc.setBlocks(81,1,21,  99,11,59  ,0)     #air in NORDISKA
+mc.setBlocks(84,1,20,   87,4,21  ,0)     #front door opening
 
 mc.setBlock(90,4,20 ,0)     #toilet window boys
 mc.setBlock(93,4,20 ,0)     #toilet window girls
@@ -42,6 +54,20 @@ makeStairs(85,7,33 ,6,3) #stairs to second floor
 
 
 
+for x in range(0,100):  #fence to the street
+    mc.setBlock(x,1,0  ,17)
+    mc.setBlock(x,2,0  ,17)
+
+makeTree(106,0,60)
+makeTree(106,0,75)
+makeTree(60,0,70)
+
+for x in range(0,8):   #trees at the street
+    makeTree(x*13,0,4)
+
+
+for x in range(0,8):   #trees at the parking space
+    makeTree(x*13,0,-20)
 
 
 
@@ -49,12 +75,3 @@ makeStairs(85,7,33 ,6,3) #stairs to second floor
 
 mc.player.setTilePos(90, 1, 15)
 
-#make coordinate system
-for x in range(0, 10):
-     mc.setBlock(x,1,0,2)#gras x-coordinate
-
-for z in range(0, 10):
-    mc.setBlock(0,z,0,24)#sandstone z-coordinate
-
-for y in range(0, 10):
-     mc.setBlock(0,1,y,1)#stone y-koordinate
