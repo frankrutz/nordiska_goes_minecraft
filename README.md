@@ -16,6 +16,9 @@ Craig Richardson, "Python programmieren lernen mit Minecraft" / "Learn to progra
 See e.g.
 https://www.amazon.com/Learn-Program-Minecraft-Transform-Python/dp/1593276702
 
+Minecraft blocktype reference:
+https://www.raspberrypi-spy.co.uk/2014/09/raspberry-pi-minecraft-block-id-number-reference/
+
 Recommended hardware:
 Any Raspberry Pi 3, Kano is the coolest package for kids:
 https://kano.me/store/row/products/computer-kit-2016
