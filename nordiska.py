@@ -3,8 +3,8 @@ mc = Minecraft.create()
 
 #########################################################################################
 def initWorld():
-    mc.setBlocks(-150,0,-150   ,150,150,150 ,0)  #air
-    mc.setBlocks(-150,-1,-150  ,150,0,150   ,2)  #gras - all.
+    #mc.setBlocks(-150,0,-150   ,150,150,150 ,0)  #air
+    #mc.setBlocks(-150,-1,-150  ,150,0,150   ,2)  #gras - all.
     mc.setBlocks(-150,-1,80    ,150,0,150,8)     #water
     mc.setBlocks(-150,-1,0,150,0,-20,1)          #stone=street
 
@@ -95,6 +95,15 @@ def makeNordiska():
     mc.setBlocks(84,7,30,   100,11,30 ,24) #inner wall entry to locker room
     mc.setBlocks(86,7,30,   87,10,30,   0) #inner door to locker room
 
+    mc.setBlocks(84,1,60  ,87,4,60  ,0)   #rowing boat door 1
+    mc.setBlocks(93,1,60  ,96,4,60  ,0)   #rowing boat door 2
+
+    for platte in range(0,9):
+        mc.setBlock( 94,0,62+platte*2,  1)    #walking plates to the lake
+
+    mc.setBlocks(93,0,80,   95,0,100    ,17)   #boat bridge, wood
+
+    
  
     mc.setBlock(81,4,22,50) #torch at entry
     mc.setBlock(81,5,23,50) #torch at entry
@@ -124,5 +133,5 @@ makeAviron()
 
 
 
-mc.player.setTilePos(90, 1, 15)
+mc.player.setTilePos(85, 1, 60)
 
