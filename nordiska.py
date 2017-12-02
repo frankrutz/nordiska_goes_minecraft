@@ -37,7 +37,7 @@ def makeMythenquai():
         mc.setBlock(x,1,0  ,85)
         mc.setBlock(x,2,0  ,85)
 
-    makeTree(96,0,75)  #tree at Nordiska, lakeside
+    makeTree(106,0,65)  #tree at Nordiska, lakeside
     
     for x in range(0,8):   #trees at the street
         makeTree(x*13,0,4)
