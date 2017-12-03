@@ -1,9 +1,6 @@
 # nordiska_goes_minecraft
 
-Status: design
-
-To go live on evening saturday 2nd December 2017
-for Dansk Julefrokost
+Status: ready to play
 
 Python programming for NORDISKA kids
 
@@ -12,11 +9,13 @@ Mythenquai 79 Zürich, Switzerland
 www.nordiska.ch
 
 Literature:
+
 Craig Richardson, "Python programmieren lernen mit Minecraft" / "Learn to program with Minecraft".
 See e.g.
 https://www.amazon.com/Learn-Program-Minecraft-Transform-Python/dp/1593276702
 
 Minecraft blocktype reference:
+
 https://www.raspberrypi-spy.co.uk/2014/09/raspberry-pi-minecraft-block-id-number-reference/
 
 Recommended hardware:
