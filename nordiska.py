@@ -32,22 +32,44 @@ def printCoordinateSystem():
 def makeMythenquai():
 
     mc.setBlocks(-150,-1,80    ,150,0,150,8)     #water
-    mc.setBlocks(-150,-1,0,150,0,-20,1)          #stone=street
+    mc.setBlocks(-150,-1,-5 ,150,0,-20 ,1 )          #stone=street
+    mc.setBlocks(-150,-1,0  ,150,0,-4  ,14)          #cobblestone
     
     for x in range(0,100):  #fence to the street
-        mc.setBlock(x,1,0  ,85)
-        mc.setBlock(x,2,0  ,85)
+        mc.setBlock(x,1,1  ,85)
+        mc.setBlock(x,2,1  ,85)
 
-    makeTree(106,0,65)  #tree at Nordiska, lakeside
+    for x in range(107,128):  #fence Seeclub to the street
+        mc.setBlock(x,1,1  ,85)
+        mc.setBlock(x,2,1  ,85)
+
+    makeTree(110,0,5)  #tree at Seeclub,roadside
+    makeTree(120,0,5)  #tree at Seeclub,roadside
+
+    makeTree(108,0,60)  #tree at Nordiska, lakeside
+    makeTree(108,0,40)  #tree at Nordiska, lakeside
+    makeTree(118,0,70)  #tree at Nordiska, lakeside
+    makeTree(118,0,50)  #tree at Nordiska, lakeside
+
+
+    
     
     for x in range(0,8):   #trees at the street
         makeTree(x*13,0,4)
 
-    for x in range(0,8):   #trees at the parking space
+    for x in range(0,10):   #trees at the parking space
         makeTree(x*13,0,-20)
 #########################################################################################
 def makeNordiska():
-    mc.setBlocks(80,0,20,100,12,60  ,24)     #NORDISKA first and second floor
+    
+    mc.setBlocks(101,0,1  ,106,0,60 ,13)     #gravel road north of NORDISKA
+    mc.setBlocks(107,1,12 ,107,1,60 ,18)     #bushes along gravel road
+    
+    for y in range(5,20):  #fence at NORDISKA gravel road
+        mc.setBlock(100,1,y  ,85)
+        mc.setBlock(100,2,y  ,85)
+    
+    mc.setBlocks(80,0,20 ,100,12,60 ,24)     #NORDISKA first and second floor
     mc.setBlocks(81,1,21,  99,11,59  ,0)     #air in NORDISKA
     mc.setBlocks(84,1,20,   87,4,21  ,0)     #front door opening
     mc.setBlocks(80,7,20,   100,11,23,0)     #front balcony opening
