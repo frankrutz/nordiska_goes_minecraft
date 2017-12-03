@@ -3,11 +3,8 @@ mc = Minecraft.create()
 
 #########################################################################################
 def initWorld():
-    #mc.setBlocks(-150,0,-150   ,150,150,150 ,0)  #air
-    #mc.setBlocks(-150,-1,-150  ,150,0,150   ,2)  #gras - all.
-    mc.setBlocks(-150,-1,80    ,150,0,150,8)     #water
-    mc.setBlocks(-150,-1,0,150,0,-20,1)          #stone=street
-
+    mc.setBlocks(-150,0,-150   ,150,150,150 ,0)  #air
+    mc.setBlocks(-150,-1,-150  ,150,0,150   ,2)  #gras - all.
 #########################################################################################
 def makeRoof(x,z,y):
     for h in range(0,12):
@@ -33,6 +30,10 @@ def printCoordinateSystem():
          mc.setBlock(0,1,y,1)#stone y-koordinate
 #########################################################################################
 def makeMythenquai():
+
+    mc.setBlocks(-150,-1,80    ,150,0,150,8)     #water
+    mc.setBlocks(-150,-1,0,150,0,-20,1)          #stone=street
+    
     for x in range(0,100):  #fence to the street
         mc.setBlock(x,1,0  ,85)
         mc.setBlock(x,2,0  ,85)
@@ -127,11 +128,5 @@ initWorld()
 makeMythenquai()
 makeNordiska()
 makeAviron()
-
-
-
-
-
-
-mc.player.setTilePos(85, 1, 60)
+mc.player.setTilePos(85, 1, 60) #set player to NORDISKA rowing door
 
